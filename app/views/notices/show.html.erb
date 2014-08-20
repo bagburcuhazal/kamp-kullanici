@@ -4,22 +4,48 @@
      <%= @notice.title %>
      <p><i><small>İlan Tarihi: <%= @notice.created_at.strftime("%Y.%m.%d / %H:%M") %></small></i></p>
    </h4>
-  </div>
-  <div class="panel-body">
-    <div class="row">
-      <div class="container">
-        <div class="col-md-4 col-sm-4">
-          <img src="http://lorempixel.com/300/300/">
-        </div>
+ </div>
+ <div class="panel-body">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-4 col-sm-4">
+        <img src="http://lorempixel.com/300/300/">
+      </div>
 
-        <div class="col-md-4 col-sm-4">
-          <%= @notice.message %>
-        </div>
+      <div class="col-md-4 col-sm-4">
+        <%= @notice.message %>
+      </div>
+      
+      <div class="col-md-4 col-sm-4">
         
-        <div class="col-md-4 col-sm-4">
-          satıcı detayları
-        </div>
       </div>
     </div>
   </div>
+</div>
+</div>
+
+<br>
+
+
+
+<div class="sb1">
+  <b>Satıcı Detayları</b> <br>
+</div>
+
+
+<div class="sb2">
+
+  Adı-Soyadı: <%=  @notice.user.full_name %><br>
+  Cinsiyet <%=  @notice.user.profile.male_female %><br>
+  Yaş:  <%=  @notice.user.profile.age %><br>
+  Telefon Numarası:<%=   @notice.user.profile.phone_number %><br> 
+  Yaşadığı Şehir: <%=   @notice.user.profile.city %><br> 
+  lçe: <%=   @notice.user.profile.town %><br> 
+  Adres: <%=   @notice.user.profile.address %><br>
+</div>
+
+<div class="sb3">
+</div>
+
+<div class="sb4">
 </div>

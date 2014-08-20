@@ -26,6 +26,7 @@ quam sit amet tincidunt. Suspendisse potenti. Donec hendrerit suscipit velit, eu
 User.delete_all
 User.create(first_name: "Mustafa Serhat", last_name: "Dündar", email: "msdundars@gmail.com", password: "12345678")
 User.create(first_name: "Ömer Faruk", last_name: "Er", email: "omfaer@bil.omu.edu.tr", password: "12345678")
+User.create(first_name: "Burcu", last_name: "Bağ", email: "bagburcu@hotmail.com", password: "11111111")
 
 Notice.delete_all
 Notice.create(title: "Logitech HD Pro Webcam C920", message: lorem, user_id: User.find_by(email: "msdundars@gmail.com").id)

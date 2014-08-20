@@ -1,2 +1,23 @@
-<p>Herşey yolunda!</p>
-<%= @profile.user.full_name %>
+<div class="kb1">
+	
+	<div class="kb2">
+		Kullanıcı Bilgileri<br>
+	</div>
+
+	<div class="kb3">
+		<li>Adı-Soyadı: <%=  @profile.user.full_name %></li>
+		<li>Cinsiyet: <%=  @profile.male_female %></li>
+		<li>Yaş:  <%=  @profile.age %></li>
+		<li>Telefon Numarası:<%=  @profile.phone_number %></li> 
+		<li>Yaşadığı Şehir: <%=  @profile.city %></li>
+		<li>lçe: <%=  @profile.town %></li>
+		<li>Adres: <%=  @profile.address %></li>
+		<li>İlanları: <%=  @profile.user.notices %> </li>
+		<li>İlanları Sayısı: <%=  @profile.user.notices.count %></li>
+	</div>
+
+	<div class="kutu1">
+	</div>
+	<div class="kutu2">
+	</div>
+</div>

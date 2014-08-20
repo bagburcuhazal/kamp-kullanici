@@ -18,6 +18,8 @@ class User < ActiveRecord::Base
     create_profile(
       profile_name: UnicodeUtils.downcase(first_name.delete(' ')),
       phone_number: "",
+      male_female: "",
+      age: "",
       city: "Samsun",
       town: "Atakum",
       address: ""

@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20140819130415) do
   create_table "profiles", force: true do |t|
     t.string   "profile_name"
     t.string   "phone_number"
+    t.string   "male_female"
+    t.integer  "age"
     t.string   "city"
     t.string   "town"
     t.text     "address"
